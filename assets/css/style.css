@@ -594,61 +594,167 @@ h1 a {
   opacity: 0.9;
   z-index: -1;
 }
-.testimonials .third-heading{
+.testimonials .third-heading {
   text-align: center;
   font-size: 33px;
   margin-bottom: 85px;
 }
-.testimonials .third-heading::after{
-  background-color: #C4DCAD;
+.testimonials .third-heading::after {
+  background-color: #c4dcad;
   bottom: -14px;
   left: 50%;
   transform: translateX(-50%);
 }
-.testimonial-content{
+.testimonial-content {
   display: flex;
   width: 80%;
   margin: auto;
 }
-.testimonial-content-box{
-min-width: 100%;
-text-align: center;
-display: none;
+.testimonial-content-box {
+  min-width: 100%;
+  text-align: center;
+  display: none;
 }
-.testimonial-content-box:first-child{
+.testimonial-content-box:first-child {
   display: block;
 }
-.testimonial-content-box p{
+.testimonial-content-box p {
   font-size: 15px;
-  color: #D1E2C2;
+  color: #d1e2c2;
   line-height: 30px;
   font-weight: 500;
 }
-.testimonial-content-box h5{
+.testimonial-content-box h5 {
   margin-top: 12px;
-  color: #D1E2C2;
+  color: #d1e2c2;
 }
 .testimonials .slider-dots {
   margin-top: 19px;
   display: flex;
   justify-content: center;
 }
-.testimonials .slider-dots a{
+.testimonials .slider-dots a {
   width: 10px;
   height: 10px;
   margin: 0 10px;
   /* text-indent: -999999px; */
 }
-.testimonials .slider-dots .fa{
+.testimonials .slider-dots .fa {
   float: right;
   width: 10px;
   height: 10px;
-  color: #D1E2C2;
+  color: #d1e2c2;
 }
 /*=================================
   testimonials styling ends here
 =================================*/
 
+/*=================================
+  contact styling starts here
+=================================*/
+.contact {
+  width: 100%;
+  height: 878px;
+  background-color: #f6f6f6;
+  padding: 90px 0;
+}
+.contact .wrapper {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.contact .third-heading {
+  color: #353639;
+  margin-bottom: 35px;
+}
+.contact .third-heading:after {
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+}
+.contact p {
+  color: #8b8b97;
+  letter-spacing: 1px;
+}
+.address-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 83px;
+}
+.address-box li {
+  width: 27%;
+}
+.address-heading {
+  position: relative;
+  font-size: 16.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  color: #656565;
+}
+.address-heading::after {
+  content: "";
+  width: 36%;
+  height: 3px;
+  background-color: #dcdcdc;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+address,
+.working-hours p,
+.email,
+.closed,
+.contact-info a {
+  font-size: 14px;
+  color: rgb(139, 139, 151);
+  line-height: 25px;
+}
+.working-hours p {
+  font-size: 13px;
+  font-weight: 400px;
+  letter-spacing: 0;
+}
+.contact-form {
+  display: block;
+  width: 90%;
+  margin: 78px auto 0;
+}
+form {
+  text-align: left;
+}
+.contact-form .address-heading::after {
+  display: none;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 48%;
+  font-size: 14px;
+  padding: 8px 12px;
+  border: 1.1px solid rgba(191, 191, 191, 0.664);
+  outline: none;
+}
+input[type="text"] {
+  margin-right: 20px;
+}
+textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 123px;
+}
+form .info-btn {
+  display: block;
+  margin: 20px auto 10px;
+}
+form .info-btn:hover {
+  background-color: #353639;
+}
+/*=================================
+  contact styling ends here
+=================================*/
 /*=================================
   main styling ends here
 =================================*/
