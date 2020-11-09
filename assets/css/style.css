@@ -451,7 +451,7 @@ h1 a {
   justify-content: center;
   flex-direction: column;
   padding: 15px 10px;
-  transition: .5s;
+  transition: 0.5s;
 }
 .services .service-content:hover {
   border-radius: 10px;
@@ -467,7 +467,7 @@ h1 a {
 }
 .service-content img {
   border-radius: 50%;
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 .services-contentBx {
   text-align: center;
@@ -476,7 +476,7 @@ h1 a {
   color: #fcfbed;
   font-size: 21px;
   margin: 17px 0 8px;
-  transition: .5s;
+  transition: 0.5s;
 }
 .services .service-content:hover .content-heading {
   color: #000;
@@ -484,7 +484,7 @@ h1 a {
 .content-para {
   color: #d9eda8;
   font-size: 14px;
-  transition: .5s;
+  transition: 0.5s;
 }
 .services .service-content:hover .content-para {
   color: #333333;
@@ -496,75 +496,157 @@ h1 a {
   Project-Gallery styling starts here
 =================================*/
 
-.project-gallery{
+.project-gallery {
   width: 100%;
   height: 1200px;
   padding: 90px 0;
 }
-.project-gallery .third-heading{
+.project-gallery .third-heading {
   text-align: center;
   font-size: 33px;
   margin-bottom: 29px;
-  color: #35364A;
+  color: #35364a;
 }
-.project-gallery .third-heading::after{
+.project-gallery .third-heading::after {
   bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
 }
-.project-gallery p{
+.project-gallery p {
   text-align: center;
   font-size: 17px;
   color: #707592;
 }
-.image-iterator{
+.image-iterator {
   width: 100%;
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
   margin: 60px 0 30px;
 }
-.image-iterator a{
+.image-iterator a {
   padding: 6px 18px;
   margin: 0 11px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   font-size: 16px;
   text-transform: uppercase;
   color: #636976;
   border-radius: 4px;
-  transition: .5s;
+  transition: 0.5s;
 }
-.image-iterator a.active{
-  background-color: #69AD30;
-  color:#E5E5E5 ;
+.image-iterator a.active {
+  background-color: #69ad30;
+  color: #e5e5e5;
 }
-.image-iterator a:hover{
-  background-color: #69AD30;
-  color:#E5E5E5 ;
+.image-iterator a:hover {
+  background-color: #69ad30;
+  color: #e5e5e5;
 }
-.image-list{
+.image-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 15px 0;
 }
-.image-list li, .image-list figure{
+.image-list li,
+.image-list figure {
   width: 343px;
   height: 229px;
   cursor: pointer;
   overflow: hidden;
 }
-.image-list li{
+.image-list li {
   margin: 14px 0;
-  transition: .5s;
+  transition: 0.5s;
 }
-.image-list li:hover{
+.image-list li:hover {
   transform: scale(1.05);
   border-radius: 10px;
 }
 /*=================================
   Project-Gallery styling ends here
+=================================*/
+
+/*=================================
+  testimonials styling starts here
+=================================*/
+
+.slider-dots {
+  display: none;
+}
+.testimonials {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding: 105px 0;
+  background: url("../img/testimonials-bg.jpg") no-repeat center/cover;
+  z-index: 0;
+}
+.testimonials::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #78b546;
+  opacity: 0.9;
+  z-index: -1;
+}
+.testimonials .third-heading{
+  text-align: center;
+  font-size: 33px;
+  margin-bottom: 85px;
+}
+.testimonials .third-heading::after{
+  background-color: #C4DCAD;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.testimonial-content{
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.testimonial-content-box{
+min-width: 100%;
+text-align: center;
+display: none;
+}
+.testimonial-content-box:first-child{
+  display: block;
+}
+.testimonial-content-box p{
+  font-size: 15px;
+  color: #D1E2C2;
+  line-height: 30px;
+  font-weight: 500;
+}
+.testimonial-content-box h5{
+  margin-top: 12px;
+  color: #D1E2C2;
+}
+.testimonials .slider-dots {
+  margin-top: 19px;
+  display: flex;
+  justify-content: center;
+}
+.testimonials .slider-dots a{
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  /* text-indent: -999999px; */
+}
+.testimonials .slider-dots .fa{
+  float: right;
+  width: 10px;
+  height: 10px;
+  color: #D1E2C2;
+}
+/*=================================
+  testimonials styling ends here
 =================================*/
 
 /*=================================
