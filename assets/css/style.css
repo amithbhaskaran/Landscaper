@@ -410,6 +410,88 @@ h1 a {
 /*=================================
   about us  styling ends here
 =================================*/
+/*=================================
+  Service styling starts here
+=================================*/
+.services {
+  width: 100%;
+  height: 831px;
+  padding: 110px 0;
+  background-color: #69ad30;
+}
+.services .third-heading {
+  text-align: center;
+  font-size: 33px;
+  margin-bottom: 33px;
+}
+.services .third-heading::after {
+  background-color: #c3dead;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.white {
+  color: #ffffff;
+}
+.service-head-para {
+  text-align: center;
+  color: #ccebd3;
+  font-size: 16px;
+}
+.services-box {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.services .service-content {
+  width: 23.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 10px;
+  transition: .5s;
+}
+.services .service-content:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+.service-content figure {
+  width: 219px;
+  height: 216px;
+  border-radius: 50%;
+  background-color: #78b546;
+}
+.service-content img {
+  border-radius: 50%;
+  transform: scale(.9);
+}
+.services-contentBx {
+  text-align: center;
+}
+.content-heading {
+  color: #fcfbed;
+  font-size: 21px;
+  margin: 17px 0 8px;
+  transition: .5s;
+}
+.services .service-content:hover .content-heading {
+  color: #000;
+}
+.content-para {
+  color: #d9eda8;
+  font-size: 14px;
+  transition: .5s;
+}
+.services .service-content:hover .content-para {
+  color: #333333;
+}
+/*=================================
+  Service styling ends here
+=================================*/
 
 /*=================================
   main styling ends here
