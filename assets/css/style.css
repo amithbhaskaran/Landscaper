@@ -290,7 +290,7 @@ h1 a {
   top: 0;
   left: 0;
   background-color: #000;
-  opacity: .5;
+  opacity: 0.5;
 }
 .banner-content {
   position: absolute;
@@ -312,9 +312,9 @@ h1 a {
   margin: auto;
   font-size: 19px;
   font-weight: 500;
-  color: #D5F2DE;
+  color: #d5f2de;
   margin-top: 5px;
-  opacity: .8;
+  opacity: 0.8;
 }
 .info-btn {
   padding: 13px 23px;
@@ -326,16 +326,89 @@ h1 a {
   letter-spacing: 1px;
   border-radius: 5px;
   border: none;
-  transition: .5s;
+  transition: 0.5s;
 }
-.info-btn:hover{
+.info-btn:hover {
   color: #69ad30;
   background-color: #fff;
-  border-radius: 10px;  
+  border-radius: 10px;
   text-shadow: 1px 1px 1px #000;
 }
 /*=================================
   banner styling ends here
+=================================*/
+
+/*=================================
+  about us  styling starts here
+=================================*/
+
+.about {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us,
+.main-service {
+  width: 48%;
+  height: 380px;
+}
+.third-heading {
+  position: relative;
+  color: #353639;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 56px;
+}
+.third-heading::after {
+  content: "";
+  width: 66px;
+  height: 3px;
+  background-color: #69ad30;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  border-radius: 10px;
+}
+.green {
+  color: #69ad30;
+  font-weight: 600;
+}
+.para {
+  color: #8e94a4;
+  font-size: 13.5px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+.about-us .info-btn {
+  margin-top: 36px;
+  outline: none;
+}
+.about-us .info-btn:hover {
+  background-color: #353639;
+}
+.main-service {
+  display: flex;
+  justify-content: space-between;
+}
+.main-service li {
+  width: 47%;
+}
+.fourth-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #363636;
+  margin: 17px 0 20px;
+}
+/*=================================
+  about us  styling ends here
 =================================*/
 
 /*=================================
