@@ -242,7 +242,7 @@ h1 a {
   transition: 0.5s;
 }
 .navigation a:hover {
-  color: #69AD30;
+  color: #69ad30;
   transform: translateY(-5px) scale(1.04);
 }
 .hamburger {
@@ -255,9 +255,9 @@ h1 a {
   justify-content: space-between;
   flex-direction: column;
   cursor: pointer;
-  display: none; 
+  display: none;
 }
-.line{
+.line {
   display: block;
   width: 100%;
   height: 3px;
@@ -270,6 +270,72 @@ h1 a {
 
 /*=================================
   main styling starts here
+=================================*/
+
+/*=================================
+  banner styling starts here
+=================================*/
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 732px;
+  background: url("../img/intro-bg.jpg") no-repeat top left/cover;
+}
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: .5;
+}
+.banner-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 58%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.banner-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.banner-content p {
+  width: 80%;
+  margin: auto;
+  font-size: 19px;
+  font-weight: 500;
+  color: #D5F2DE;
+  margin-top: 5px;
+  opacity: .8;
+}
+.info-btn {
+  padding: 13px 23px;
+  background-color: #69ad30;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 42px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: none;
+  transition: .5s;
+}
+.info-btn:hover{
+  color: #69ad30;
+  background-color: #fff;
+  border-radius: 10px;  
+  text-shadow: 1px 1px 1px #000;
+}
+/*=================================
+  banner styling ends here
 =================================*/
 
 /*=================================
