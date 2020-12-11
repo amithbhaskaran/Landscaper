@@ -255,6 +255,7 @@ h1 a {
   display: none;
   transform: translateY(-50%);
   z-index: 10;
+  transition:.5s ease;
 }
 .line {
   display: block;
@@ -263,6 +264,12 @@ h1 a {
   background-color: #fff;
   border-radius: 20px;
 }
+
+.active-hamburger .line:nth-child(1) { transform:  translateY(9px) rotate(45deg); }
+.active-hamburger .line:nth-child(2) { transform: scale(0);  }
+.active-hamburger .line:nth-child(3) { transform: translateY(-9px) rotate(-45deg) }
+
+  
 /*=================================
   Header styling ends here
 =================================*/
@@ -881,7 +888,6 @@ footer .wrapper {
     justify-content: space-between;
     flex-direction: column;
     z-index: 20;
-    top: 5%;
   }
   .navigation {
     position: fixed;
@@ -896,6 +902,7 @@ footer .wrapper {
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 0 20px rgba(240, 235, 235, 0.747);
+    z-index: 19;
   }
   .banner-content {
     width: 100%;
