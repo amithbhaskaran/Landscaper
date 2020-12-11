@@ -32,6 +32,7 @@ $(document).ready(function () {
     $(".top-btn").click(() => $(window).scrollTop(0));
 
      // -----------------------hamburger
+     $(".navigation").removeClass("active-navigation");
      $(".hamburger").click( function() {
         $(this).toggleClass("active-hamburger");
         $(".navigation").toggleClass("active-navigation");
