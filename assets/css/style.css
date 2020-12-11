@@ -881,7 +881,6 @@ footer .wrapper {
     justify-content: space-between;
     flex-direction: column;
     z-index: 20;
-    top: 5%;
   }
   .navigation {
     position: fixed;
@@ -896,6 +895,7 @@ footer .wrapper {
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 0 20px rgba(240, 235, 235, 0.747);
+    z-index: 19;
   }
   .banner-content {
     width: 100%;
