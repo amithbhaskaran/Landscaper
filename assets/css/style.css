@@ -902,8 +902,11 @@ footer .wrapper {
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 0 20px rgba(240, 235, 235, 0.747);
-    z-index: 19;
+    z-index: 1
+    9;
   }
+  .active-navigation {right : 0;}
+  
   .banner-content {
     width: 100%;
   }
