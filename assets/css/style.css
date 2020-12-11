@@ -229,6 +229,9 @@ h1 a {
   font-weight: 500;
   color: #ecebe0;
 }
+
+.navigation { transition: .5s;}
+
 .navigation li {
   margin: 0 18px;
 }
@@ -906,7 +909,7 @@ footer .wrapper {
     9;
   }
   .active-navigation {right : 0;}
-  
+
   .banner-content {
     width: 100%;
   }
