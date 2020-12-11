@@ -245,13 +245,15 @@ h1 a {
   transform: translateY(-5px) scale(1.04);
 }
 .hamburger {
-  position: fixed;
-  top: 3%;
+  position: absolute;
+  top: 50%;
   right: 4%;
   height: 27px;
   width: 35px;
   cursor: pointer;
   display: none;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 .line {
   display: block;
