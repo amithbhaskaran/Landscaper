@@ -28,8 +28,8 @@ $(document).ready(function () {
 
     // ---------------back to top js
 
-    $(window).scroll(() => ($(window).scrollTop() >= 150 ? $(".top-btn").show(100) : $(".top-btn").hide(100)))
-    $(".top-btn").click(() => $(window).scrollTop(0))
+    $(window).scroll(() => ($(window).scrollTop() >= 150 ? $(".top-btn").show(100) : $(".top-btn").hide(100)));
+    $(".top-btn").click(() => $(window).scrollTop(0));
 })
 
 
