@@ -30,9 +30,12 @@ $(document).ready(function () {
     $(".top-btn").hide();
     $(window).scroll(() => ($(window).scrollTop() >= 150 ? $(".top-btn").show(100) : $(".top-btn").hide(100)));
     $(".top-btn").click(() => $(window).scrollTop(0));
- 
 
-
+     // -----------------------hamburger
+     $(".hamburger").click( function() {
+        $(this).toggleClass("active-hamburger");
+        $(".navigation").toggleClass("active-navigation");
+    })
 
 
 
