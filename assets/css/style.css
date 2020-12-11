@@ -542,7 +542,7 @@ h1 a {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 15px 0;
 }
 .image-list li,
@@ -553,7 +553,7 @@ h1 a {
   overflow: hidden;
 }
 .image-list li {
-  margin: 14px 0;
+  margin: 5px;
   transition: 0.5s;
 }
 .image-list li:hover {
